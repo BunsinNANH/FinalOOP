@@ -1,5 +1,7 @@
 <?php 
-    include "src/functions.php";
+    // include "src/functions.php";
+    use CodeCourse\Calculate;
+    include "public/vendor/autoload.php";
 
     if(isset($_POST['btn-submit'])){
         $firstNumber = $_POST['fNumber'];

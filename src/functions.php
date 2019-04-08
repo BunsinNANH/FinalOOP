@@ -1,4 +1,4 @@
-<?php 
+<?php namespace CodeCourse;
     class Calculate{
         public $firstNumber;
         public $sencodNumber;
