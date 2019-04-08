@@ -4,13 +4,13 @@
         <div class="col-4">
             <div class="card">
                 <div class="card-body">
-                    <form action="">
+                    <form action="" method="POST">
                         <div class="form-group">
                             <label for="fNumber">First Number:</label>
                             <input type="number" class="form-control" name="fNumber" id="fNumber">
                         </div>
                         <label>Select Operator:</label>
-                        <select class="custom-select">
+                        <select class="custom-select" name="functionName">
                             <option value="">None</option>
                             <option value="Add">Add</option>
                             <option value="Minus">Minus</option>
@@ -21,9 +21,9 @@
                             <label for="sNumber">Second Number:</label>
                             <input type="number" class="form-control" name="sNumber" id="sNumber">
                         </div>
-                        <button type="submit" class="btn btn-success">Calculate</button>
+                        <button type="submit" class="btn btn-success" name="btn-submit">Calculate</button>
                     </form><br>
-                    <p><strong>The result is:</strong><span id="result"></span></p>
+                    <?php include "cal.php";?>
                 </div>
             </div>
         </div>
